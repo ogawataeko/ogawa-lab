@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ogawa's Laboratory - Cognitive Psychology and Psycholinguistics, Hirosaki University">
+  <title>English | Ogawa's Laboratory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .profile-summary {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      background: #fff;
+      border-radius: 8px;
+      padding: 36px 40px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 50px;
+    }
+    .profile-summary-text {
+      flex: 1;
+    }
+    .profile-summary-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 4px;
+    }
+    .profile-summary-title {
+      font-size: 0.88rem;
+      color: #777;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .profile-summary-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .profile-field {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .profile-field-label {
+      min-width: 110px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #b08d7a;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      flex-shrink: 0;
+    }
+    .profile-field-value {
+      font-size: 0.88rem;
+      color: #444;
+    }
+    .ext-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding: 8px 18px;
+      background: #b08d7a;
+      color: #fff;
+      font-size: 0.82rem;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+      transition: background 0.3s ease;
+    }
+    .ext-link:hover {
+      background: #9a7a68;
+      opacity: 1;
+    }
+    .ext-link svg {
+      width: 14px;
+      height: 14px;
+    }
+    .pub-year {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      color: #b08d7a;
+      min-width: 50px;
+      flex-shrink: 0;
+    }
+    .address-block {
+      background: #fff;
+      border-radius: 8px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid #b08d7a;
+    }
+    .address-block p {
+      font-size: 0.88rem;
+      color: #444;
+      line-height: 1.9;
+    }
+    @media (max-width: 600px) {
+      .profile-summary {
+        flex-direction: column;
+        padding: 24px 20px;
+        gap: 20px;
+      }
+      .profile-field {
+        flex-direction: column;
+        gap: 2px;
+      }
+      .profile-field-label {
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <nav class="nav scrolled" id="mainNav">
+    <a href="index.html" class="nav-logo">Ogawa's Laboratory</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="profile.html">プロフィール</a></li>
+      <li><a href="research.html">研究業績</a></li>
+      <li><a href="lectures.html">担当講義</a></li>
+      <li><a href="english.html">English</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <p class="page-header-label">English</p>
+      <h1 class="page-header-title">Ogawa's Laboratory</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-main">
+    <div class="page-container">
+
+      <!-- Profile -->
+      <div class="profile-summary fade-in">
+        <div class="profile-summary-text">
+          <h2 class="profile-summary-name">Taeko Ogawa, Ph.D.</h2>
+          <p class="profile-summary-title">
+            Professor<br>
+            Graduate School of Health Sciences<br>
+            Hirosaki University
+          </p>
+          <div class="profile-summary-fields">
+            <div class="profile-field">
+              <span class="profile-field-label">Research Area</span>
+              <span class="profile-field-value">Cognitive Psychology, Psycholinguistics</span>
+            </div>
+            <div class="profile-field">
+              <span class="profile-field-label">Degree</span>
+              <span class="profile-field-value">Ph.D. (Nagoya University)</span>
+            </div>
+            <div class="profile-field">
+              <span class="profile-field-label">E-mail</span>
+              <span class="profile-field-value">ogawa.taeko.m [at] gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Interests -->
+      <section class="content-section fade-in">
+        <div class="content-section-header">
+          <p class="section-label">Research</p>
+          <h2 class="section-title">Research Interests</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="text-block">
+          <p class="body-text">My research interest is human language processing, especially visual word recognition of Japanese Kanji and Kana words. We currently work on projects such as semantic similarity and transparency of Kanji character words, Japanese word search system, second language processing, and homophone processing using visual world paradigm with co-researchers.</p>
+        </div>
+      </section>
+
+      <!-- Selected Publications -->
+      <section class="content-section fade-in">
+        <div class="content-section-header">
+          <p class="section-label">Selected Works</p>
+          <h2 class="section-title">Selected Publications</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <h3 style="font-family: 'Noto Serif JP', serif; font-size: 0.95rem; font-weight: 600; color: #2c3e50; margin-bottom: 14px; padding-left: 14px; border-left: 3px solid #b08d7a;">Journal Articles (Peer-Reviewed)</h3>
+        <div class="pub-list" style="margin-bottom: 28px;">
+          <div class="pub-item">Hino, Y., Lupker, S. J., Sears, C. R., &amp; Ogawa, T. (1998). The effects of polysemy for Japanese katakana words. <em>Reading and Writing: An Interdisciplinary Journal</em>, 10, 395-424.</div>
+          <div class="pub-item">Hino, Y., Lupker, S. J., Ogawa, T., &amp; Sears, C. R. (2003). Masked repetition priming and word frequency effects across different types of Japanese scripts. <em>Journal of Memory and Language</em>, 48, 33-66.</div>
+          <div class="pub-item">Ogawa, T., &amp; Saito, H. (2006). Semantic activation in visual recognition of Japanese two-kanji compound words. <em>Psychologia</em>, 49, 162-177.</div>
+          <div class="pub-item">Nomura, Y., Ogawa, T., &amp; Nomura, M. (2010). Perspective taking associated with social relationships: A NIRS study. <em>NeuroReport</em>, 21, 1100-1105.</div>
+          <div class="pub-item">Joyce, T., Masuda, H., &amp; Ogawa, T. (2014). Jōyō kanji as core building blocks of the Japanese writing system. <em>Written Language &amp; Literacy</em>, 17, 173-194.</div>
+          <div class="pub-item">Homma, M., et al., &amp; Ogawa, T. (in press). Mental health of university students during the COVID-19 pandemic. <em>Journal of Health Sciences Research</em>, 16(2).</div>
+          <div class="pub-item">Kanazawa, R. &amp; Ogawa, T. (in press). The influence of recognition of depression and mental health literacy on mental health first aid. <em>Journal of Health Sciences Research</em>, 16(2).</div>
+        </div>
+
+        <h3 style="font-family: 'Noto Serif JP', serif; font-size: 0.95rem; font-weight: 600; color: #2c3e50; margin-bottom: 14px; padding-left: 14px; border-left: 3px solid #b08d7a;">Books</h3>
+        <div class="pub-list" style="margin-bottom: 28px;">
+          <div class="pub-item">Hino, Y., Lupker, S. J., Sears, C. R., &amp; Ogawa, T. (1998). The effects of polysemy for Japanese katakana words. In C. K. Leong &amp; K. Tamaoka (Eds.), <em>Cognitive Processing of the Chinese and the Japanese Languages</em> (pp. 241-270). Kluwer Academic Publishers.</div>
+          <div class="pub-item">Ogawa, T., &amp; Nomura, M. (2012). Using NIRS to investigate social relationship in empathic process. In T. Theophanides (Ed.), <em>Infrared Spectroscopy - Life and Biomedical Sciences</em> (pp. 67-78). InTech.</div>
+        </div>
+
+        <p class="body-text" style="text-align: center;">
+          <a href="research.html" style="color: #b08d7a; font-size: 0.85rem; letter-spacing: 0.06em;">→ Full list of publications (Japanese page)</a>
+        </p>
+      </section>
+
+      <!-- External Links -->
+      <section class="content-section fade-in">
+        <div class="content-section-header">
+          <p class="section-label">Links</p>
+          <h2 class="section-title">External Links</h2>
+          <div class="section-line"></div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://www.researchgate.net/profile/Taeko_Ogawa" target="_blank" rel="noopener noreferrer" class="ext-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            ResearchGate
+          </a>
+          <a href="https://researchmap.jp/muc6mbi1s-2231323/#_2231323" target="_blank" rel="noopener noreferrer" class="ext-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            researchmap
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact / Address -->
+      <section class="content-section fade-in">
+        <div class="content-section-header">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Contact Information</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="address-block">
+          <p><strong>Taeko Ogawa</strong></p>
+          <p>Hirosaki University<br>
+          Graduate School of Health Sciences<br>
+          66-1, Hon-cho, Hirosaki-city, Aomori,<br>
+          036-8564, Japan</p>
+          <p style="margin-top: 12px;">E-mail: ogawa.taeko.m [at] gmail.com</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-logo">Ogawa's Laboratory</p>
+    <p class="footer-affiliation">Hirosaki University, Graduate School of Health Sciences</p>
+    <div class="footer-links">
+      <a href="index.html">Home (日本語)</a>
+      <a href="profile.html">Profile</a>
+      <a href="research.html">Publications</a>
+      <a href="lectures.html">Lectures</a>
+      <a href="lab.html">Laboratory</a>
+      <a href="textbook.html">Textbook</a>
+    </div>
+    <p class="footer-copy">Updated: April, 2026 ｜ Copy Right 2009 Ogawa's Laboratory All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
