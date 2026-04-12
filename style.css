@@ -548,12 +548,14 @@ a:hover {
   text-align: center;
 }
 
-.footer-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.1em;
-  margin-bottom: 6px;
+.footer-logo img {
+  height: 80px;
+  width: auto;
+  opacity: 0.9;
+  margin-bottom: 12px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 .footer-affiliation {
